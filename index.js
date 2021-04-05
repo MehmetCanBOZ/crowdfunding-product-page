@@ -89,6 +89,14 @@ $(".continue").click((e)=>{
     }else if(product_stock==black){
         blackstock--;
     }
+    if(bambostock===1){
+        $(".bambostock").parent().parent().find(".continue").css('pointer-events','none');
+    }
+    if(blackstock===1){
+        $(".blackstock").parent().parent().find(".continue").css('pointer-events','none');
+    }
+   
+     console.log( $(".bambostock").parent().parent().find(".continue"));
   /*  product_stock="."+product_stock;*/
     $("#backers").html(backer/1000)
     $("#backed").html("$"+(backed/1000)); 

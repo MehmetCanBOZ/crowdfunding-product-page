@@ -37,7 +37,10 @@ dl,
 dd {
   margin: 0;
 }
-
+a{
+  text-decoration: none;
+  color: white;
+}
 html{
   height: 100%;
 }
@@ -161,6 +164,7 @@ background-color: var(--moderateCyan);
 color: white;
 font-weight: 500;
 outline: none;
+cursor: pointer;
 }
 
 #back_project:hover{
@@ -176,7 +180,8 @@ outline: none;
   border:0px;
   outline: none;
   font-weight: 700;
-  color:var(--darkGray)
+  color:var(--darkGray);
+  cursor: pointer;
 }
 
 .bookmark_color{
@@ -538,10 +543,13 @@ position: fixed;
    
   }
   .menu_item{
-    color: black;
+    
     font-weight: 700;
     padding: 1rem;
     border-bottom: 1px solid var(--darkGraySoft);
+  }
+  .menu_item a{
+    color: black;
   }
   .bookmarks{
     right:5%;
